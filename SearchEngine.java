@@ -40,8 +40,7 @@ class Handler implements URLHandler {
             if (url.getPath().contains("/add")) {
                 String[] parameters = url.getQuery().split("=");
                 str.add(parameters[1]);
-                return "String " + parameters[1]+ " added! It's now " + printString(str) + "size = " 
-                + str.size();       
+                return "String " + parameters[1]+ " added! It's now " + printString(str);       
             } 
             else if (url.getPath().contains("/search")){
                 String[] parameters = url.getQuery().split("="); 
